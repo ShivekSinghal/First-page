@@ -9,6 +9,10 @@ app = Flask(__name__)
 def landing_page():
     return render_template("index.html")
 
+@app.route('/pinkd')
+def pinkd_tickets():
+    return render_template("pinkd.html")
+
 
 if __name__ == '__main__':
-    app.run(debug=True, port=4925)
+    app.run(debug=True, port=4996)
