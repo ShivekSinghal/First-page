@@ -47,7 +47,7 @@ h6 {
 }
 
 .video-container {
-  max-width: 200px; /* Adjust the max-width as needed */
+ /* Adjust the max-width as needed */
   margin: auto;
   position: relative; /* Relative position for the container */
 }
