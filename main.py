@@ -1,5 +1,6 @@
-from flask import Flask, render_template
-
+from flask import Flask, jsonify, request, render_template
+import requests
+from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
@@ -14,5 +15,6 @@ def pinkd_tickets():
     return render_template("pinkd.html")
 
 
+
 if __name__ == '__main__':
-    app.run(debug=True, port=4897)
+    app.run(debug=True, port=4883)
